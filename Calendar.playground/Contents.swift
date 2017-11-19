@@ -2,4 +2,10 @@
 
 import UIKit
 
-var str = "Hello, playground"
+let cal = Calendar.current
+cal.weekdaySymbols
+cal.component(.weekOfYear, from: Date())
+cal.component(.day, from: Date())
+cal.component(.month, from: Date())
+cal.component(.year, from: Date())
+let components = cal.dateComponents([.day, .weekOfYear, .month, .year], from: Date())
